@@ -1,0 +1,124 @@
+/*------------------- PORTFOLIO -------------------*/
+
+.portfolio {
+  padding-top: 100px;
+  padding-bottom: 94px;
+}
+
+/* FILTER  */
+.filter-list {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.filter-list-item {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+.filter-button {
+  font-family: Roboto;
+  background-color: var(--secondary-backround-color);
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  padding: 6px 22px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  transition: 250ms box-shadow cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms background-color cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--white-color);
+    background-color: var(--brand-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+/* .filter-list button:hover{
+    border-color: transparent;
+    outline: none;
+} */
+
+/* WORKS */
+
+.portfolio-div {
+  border: 1px solid #eeeeee;
+  border-top: none;
+  padding: 20px 24px;
+}
+
+.portfolio-section-link {
+  display: inline-block;
+  transition: 250ms box-shadow cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.portfolio-section-item {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  width: 370px;
+  margin-left: 30px;
+  margin-top: 30px;
+
+  &:hover .portfolio-text-modal,
+  &:focus .portfolio-text-modal {
+    top: 0;
+  }
+}
+
+.portfolio-section-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+
+  & .title {
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+  }
+
+  & .type {
+    color: var(--secondary-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+  }
+}
+
+/* MODAL WINDOW */
+
+.portfolio-modal {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-text-modal {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 100%;
+  width: 370px;
+  background-color: rgba(33, 150, 243, 0.9);
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  padding: 63px 24px;
+  color: #ffffff;
+  transition: 250ms top cubic-bezier(0.4, 0, 0.2, 1);
+}

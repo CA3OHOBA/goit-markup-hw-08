@@ -1,0 +1,76 @@
+/*------------------- SECTION FEATURES (WITH HIDDEN H2) -------------------*/
+
+.hidden {
+  display: none;
+}
+
+.features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.features-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features-list-item {
+  width: 270px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+/* ICONS */
+
+.features-list-item {
+  &::before {
+    display: block;
+    content: "";
+    height: 120px;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--secondary-backround-color);
+  }
+}
+
+.antenna {
+  &::before {
+    background-image: url(../images/antenna.svg);
+  }
+}
+
+.clock {
+  &::before {
+    background-image: url(../images/clock.svg);
+  }
+}
+
+.diagram {
+  &::before {
+    background-image: url(../images/diagram.svg);
+  }
+}
+
+.astronaut {
+  &::before {
+    background-image: url(../images/astronaut.svg);
+  }
+}
+
+.features-list-item .title {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.features-list-item .text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  margin-top: 10px;
+}
