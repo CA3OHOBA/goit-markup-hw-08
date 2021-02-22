@@ -1,7 +1,10 @@
 /*------------------- SECTION OUR CLIENTS -------------------*/
 .our-clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 60px 0;
+
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
 
   &-title {
     margin-bottom: 50px;
