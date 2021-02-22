@@ -893,9 +893,21 @@ textarea {
 
 /* FILTER  */
 .filter-list {
-  margin-bottom: 50px;
-  display: flex;
-  justify-content: center;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .filter-list {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter-list {
+    margin-bottom: 50px;
+  }
 }
 
 .filter-list-item:not(:last-child) {

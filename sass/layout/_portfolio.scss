@@ -9,10 +9,19 @@
 }
 
 /* FILTER  */
+
 .filter-list {
-  margin-bottom: 50px;
-  display: flex;
-  justify-content: center;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .filter-list-item {
