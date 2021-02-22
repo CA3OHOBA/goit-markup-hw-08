@@ -85,10 +85,28 @@ textarea {
     height: auto;
 } */
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 /* ДОМИНАНТНЫЙ */
@@ -227,28 +245,52 @@ textarea {
 
 /*------------------- HERO -------------------*/
 .hero {
-  height: 600px;
+  max-width: 1600px;
+  min-height: 400px;
   display: flex;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  justify-content: center;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.hero-title {
-  color: var(--white-color);
-  font-weight: 900;
-  font-size: 44px;
-  margin: 0 auto 30px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  width: 696px;
+@media screen and (min-width: 1200px) {
+  .hero {
+    min-height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
-.hero-button {
+.hero-title {
+  width: 100%;
+  color: var(--white-color);
+  font-weight: 900;
+  font-size: 24px;
+  margin: 0 auto 30px;
+  line-height: 1.64;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 480px) {
+  .hero-title {
+    width: 360px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
+.hero .hero-button {
   height: 50px;
   color: var(--white-color);
   background-color: var(--brand-color);
@@ -264,7 +306,7 @@ textarea {
   transition: 250ms box-shadow cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-button:hover {
+.hero .hero-button:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -481,21 +523,53 @@ textarea {
 }
 
 .features {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.features-list {
-  display: flex;
-  justify-content: space-between;
+@media screen and (min-width: 1200px) {
+  .features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
 }
 
 .features-list-item {
-  width: 270px;
+  width: 100%;
 }
 
 .features-list-item:last-child {
   margin-right: 0;
+}
+
+.features-list-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .features-list-item {
+    width: 354px;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  .features-list-item:not(:last-child) {
+    margin-bottom: unset;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features-list-item {
+    width: 270px;
+  }
 }
 
 /* ICONS */
@@ -531,6 +605,13 @@ textarea {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .features-list-item .title {
+    text-align: left;
+  }
 }
 
 .features-list-item .text {
