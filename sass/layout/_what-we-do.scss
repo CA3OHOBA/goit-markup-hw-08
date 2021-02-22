@@ -1,6 +1,9 @@
 /*------------------- SECTION  WHAT WE DO -------------------*/
 
 .what-we-do {
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
+    display: none;
+  }
   padding-bottom: 94px;
   &-title {
     margin-bottom: 50px;
