@@ -11,11 +11,12 @@
 /* FILTER  */
 
 .filter-list {
-  margin-bottom: 40px;
+  margin-bottom: 25px;
+  display: flex;
+  flex-wrap: wrap;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 30px;
-    display: flex;
     justify-content: center;
   }
 
@@ -28,6 +29,7 @@
   &:not(:last-child) {
     margin-right: 8px;
   }
+  margin-bottom: 15px;
 }
 
 .filter-button {
@@ -61,41 +63,13 @@
 
 /* WORKS */
 
-.portfolio-div {
-  border: 1px solid #eeeeee;
-  border-top: none;
-  padding: 20px 24px;
-}
-
-.portfolio-section-link {
-  display: inline-block;
-  transition: 250ms box-shadow cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:focus {
-    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16);
-  }
-}
-
-.portfolio-section-item {
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
-  width: 370px;
-  margin-left: 30px;
-  margin-top: 30px;
-
-  &:hover .portfolio-text-modal,
-  &:focus .portfolio-text-modal {
-    top: 0;
-  }
-}
-
 .portfolio-section-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
 
   & .title {
     color: var(--primary-text-color);
@@ -110,6 +84,39 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
+  }
+}
+
+.portfolio-section-item {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+
+  &:hover .portfolio-text-modal,
+  &:focus .portfolio-text-modal {
+    top: 0;
+  }
+}
+
+.portfolio-section-link {
+  width: 100%;
+  display: inline-block;
+  transition: 250ms box-shadow cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 }
 
@@ -133,4 +140,10 @@
   padding: 63px 24px;
   color: #ffffff;
   transition: 250ms top cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-div {
+  border: 1px solid #eeeeee;
+  border-top: none;
+  padding: 20px 24px;
 }

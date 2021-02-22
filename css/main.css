@@ -893,13 +893,14 @@ textarea {
 
 /* FILTER  */
 .filter-list {
-  margin-bottom: 40px;
+  margin-bottom: 25px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 @media screen and (min-width: 768px) {
   .filter-list {
     margin-bottom: 30px;
-    display: flex;
     justify-content: center;
   }
 }
@@ -908,6 +909,10 @@ textarea {
   .filter-list {
     margin-bottom: 50px;
   }
+}
+
+.filter-list-item {
+  margin-bottom: 15px;
 }
 
 .filter-list-item:not(:last-child) {
@@ -942,40 +947,13 @@ textarea {
     outline: none;
 } */
 /* WORKS */
-.portfolio-div {
-  border: 1px solid #eeeeee;
-  border-top: none;
-  padding: 20px 24px;
-}
-
-.portfolio-section-link {
-  display: inline-block;
-  transition: 250ms box-shadow cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.portfolio-section-link:hover, .portfolio-section-link:focus {
-  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.portfolio-section-item {
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
-  width: 370px;
-  margin-left: 30px;
-  margin-top: 30px;
-}
-
-.portfolio-section-item:hover .portfolio-text-modal,
-.portfolio-section-item:focus .portfolio-text-modal {
-  top: 0;
-}
-
-.portfolio-section-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+@media screen and (min-width: 768px) {
+  .portfolio-section-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
 }
 
 .portfolio-section-list .title {
@@ -991,6 +969,40 @@ textarea {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
+}
+
+.portfolio-section-item {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
+
+.portfolio-section-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-section-item {
+    width: 354px;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+}
+
+.portfolio-section-item:hover .portfolio-text-modal,
+.portfolio-section-item:focus .portfolio-text-modal {
+  top: 0;
+}
+
+.portfolio-section-link {
+  width: 100%;
+  display: inline-block;
+  transition: 250ms box-shadow cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-section-link:hover, .portfolio-section-link:focus {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /* MODAL WINDOW */
@@ -1012,6 +1024,12 @@ textarea {
   padding: 63px 24px;
   color: #ffffff;
   transition: 250ms top cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-div {
+  border: 1px solid #eeeeee;
+  border-top: none;
+  padding: 20px 24px;
 }
 
 /*------------------- FOOTER -------------------*/
