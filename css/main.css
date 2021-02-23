@@ -543,6 +543,11 @@ textarea {
   background: rgba(0, 0, 0, 0.2);
 }
 
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
 .vector-link {
   position: absolute;
   display: flex;
