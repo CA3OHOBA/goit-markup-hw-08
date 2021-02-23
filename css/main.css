@@ -267,7 +267,7 @@ textarea {
     width: 100%;
     height: 100vh;
     background-color: white;
-    padding: 48px 83px 48px 40px;
+    padding: 48px 43px 48px 40px;
     z-index: 1;
   }
   .menu-container.is-open {
@@ -277,42 +277,41 @@ textarea {
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 47px;
     letter-spacing: 0.02em;
     color: #212121;
     position: left;
   }
   .menu-container__item:not(:last-child) {
-    margin-bottom: 50px;
+    margin-bottom: 25px;
   }
   .menu-container__list-socials li {
     display: inline;
   }
   .menu-container__list {
-    margin-bottom: 202px;
+    margin-bottom: 152px;
   }
   .menu-container__list-socials a {
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 10px;
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: #2196f3;
-  }
-  .border_link::after:not(:last-child) {
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    transform: rotate(90deg);
   }
   .menu__link-tel {
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
-    font-size: 34px;
+    font-size: 24px;
     line-height: 40px;
     letter-spacing: 0.02em;
     color: #2196f3;
+  }
+  .menu__link-mail1 {
+    margin-bottom: 80px;
   }
   .menu__link-mail {
     font-family: Roboto;
@@ -323,7 +322,14 @@ textarea {
     letter-spacing: 0.02em;
     color: #757575;
   }
-  .menu__list-soc__icon.a::after {
+  .menu__link-tel1 {
+    margin-bottom: 40px;
+  }
+  .menu__list-soc__icon a {
+    margin-right: 10px;
+  }
+  .menu__list-soc__icon:not(:last-child) a::after {
+    content: "";
     border: 1px solid rgba(33, 33, 33, 0.2);
     transform: rotate(90deg);
   }
