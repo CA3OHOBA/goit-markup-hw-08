@@ -61,11 +61,16 @@
   display: block;
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 30px;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 12px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+    line-height: 23px;
+  }
 }
 
 .modal-form {
@@ -120,6 +125,10 @@
 
   &::placeholder {
     color: rgba(117, 117, 117, 0.5);
+    @media screen and (min-width: 1200px) {
+      font-size: 12px;
+      line-height: 14px;
+    }
   }
 }
 
@@ -143,12 +152,17 @@
 
 .label-text {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.03em;
   color: #757575;
   margin-bottom: 30px;
   padding-left: 8px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 /* CHECKBOX */
